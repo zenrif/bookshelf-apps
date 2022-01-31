@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-bookshelf-stay-home-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+      title="bookshelf icons"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-wrap navbar">
+        <h1>
+          <img
+            style="width: 30px"
+            src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-bookshelf-stay-home-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+          /><span> Bookshelf Apps</span>
+        </h1>
+        <p>By : M Zaenal Arif S</p>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <main>
+      <div id="content">
+        <article>
+          <section class="input_section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBook">
+              <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" required />
+              </div>
+              <div class="input_inline">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox" />
+              </div>
+              <button type="submit">
+                <img
+                  style="width: 35px"
+                  src="https://img.icons8.com/color/50/000000/add-book.png"
+                />
+              </button>
+            </form>
+          </section>
+        </article>
+
+        <article>
+          <section class="search_section book_shelf" id="searchSection">
+            <h2>Cari Buku</h2>
+            <input
+              type="text"
+              id="search"
+              onkeyup="bookSearch()"
+              placeholder="  Masukkan judul buku..."
+            />
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="belum">
+          <section class="book_shelf">
+            <h2>
+              <img
+                style="width: 25px"
+                src="https://img.icons8.com/color/48/000000/story-book.png"
+              />
+              Belum selesai dibaca
+            </h2>
+            <div id="incompleteBookshelf" class="book_list"></div>
+          </section>
+        </article>
+
+        <article class="selesai">
+          <section class="book_shelf">
+            <h2>
+              <img
+                style="width: 25px"
+                src="https://img.icons8.com/color/50/000000/book.png"
+              />
+              Selesai dibaca
+            </h2>
+            <div id="completeBookshelf" class="book_list"></div>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <article class="container-footer">
+        <td>
+          Copyright © 2022 |
+          <a href="https://icons8.com/icon/GkO8Cc9gkaLT/bookshelf"
+            >icon by Icons8</a
+          >
+        </td>
+      </article>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

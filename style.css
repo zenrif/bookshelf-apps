@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+header {
+  display: inline;
+}
+
+.navbar {
+  background: linear-gradient(-45deg, rgba(143, 83, 255), rgba(255, 0, 149));
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.clear {
+  clear: left;
+}
+
+.header-wrap {
+  font-size: 20px;
+  padding: 10px;
+  background: linear-gradient(
+    -45deg,
+    rgba(55, 15, 165, 0.6),
+    rgba(46, 196, 58, 0.678)
+  );
+  text-align: center;
+  color: white;
+}
+
+.header-wrap p {
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+main {
+  overflow: auto;
+  background: linear-gradient(-60deg, blue, white);
+}
+
+*#content {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  place-items: center;
+}
+
+aside {
+  float: right;
+  width: 50%;
+  margin-top: 50px;
+  padding-right: 20px;
+}
+
+.belum {
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 5px solid;
+  border: 4px solid;
+  border-color: #00c8eb;
+  height: 250px;
+  text-align: justify;
+  overflow: auto;
+  margin: 0px 5px 50px 5px;
+}
+
+.selesai {
+  margin: 0 auto;
+  border: 4px solid;
+  border-color: #00c8eb;
+  height: 250px;
+  text-align: justify;
+  overflow: auto;
+  margin: 0px 5px 50px 5px;
+}
+
+.input_section > h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.input_section > #inputBook {
+  padding: 16px;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background: linear-gradient(-45deg, rgba(43, 81, 112), rgb(0, 61, 192));
+  color: white;
+  border: 2px black solid;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > .input > input {
+  width: 100%;
+  padding: 8px;
+}
+
+.input_section > form > .input > label {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section > h2 {
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+#search {
+  display: block;
+  margin: 0 auto;
+  background-image: url("https://img.icons8.com/nolan/50/google-web-search.png");
+  background-position: -2px 0px;
+  background-repeat: no-repeat;
+  width: 70%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.orange {
+  background-color: darkorange;
+  color: white;
+}
+
+.red {
+  background-color: darkred;
+  margin: 0 10px 0 0;
+  color: white;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: linear-gradient(-45deg, blue, white);
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
